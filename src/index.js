@@ -9,12 +9,12 @@ module.exports = function check(str, bracketsConfig) {
   }
   
   // Stack for storing opened brackets
-  var stack = [];
+  let stack = [];
   
   // All magic inside
-  for(var i = 0; i < str.length; i++) {
+  for(let i = 0; i < str.length; i++) {
   // Get current bracket
-  var char = str.charAt(i);
+  let char = str.charAt(i);
   
   // Check if it's open bracket
   // or if it | and last stack element is not |
